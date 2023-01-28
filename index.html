@@ -1,0 +1,93 @@
+<html>
+
+</html>
+<script>
+    // const arr = [5, 2, 1, 4, 6, 7];
+
+    // function findMax() {
+    //     let max = 0;
+    //     for (var i = 0; i <= arr.length; i++) {
+    //         if (arr[i] > max) {
+    //             max = arr[i]
+    //             console.log(max);
+    //         }
+    //     }
+
+    //     return max;
+    // }
+
+
+    // console.log(findMax());
+
+    //example of reduce
+
+    const users = [
+        { firstName: 'Divya', lastName: 'Mittal', age: 27 },
+        { firstName: 'Divya', lastName: 'Chaudhary', age: 29 },
+        { firstName: 'Archana', lastName: 'Srivastava', age: 24 },
+        { firstName: 'Garima', lastName: 'Maurya', age: 25 },
+        { firstName: 'Poornima', lastName: 'Pandey', age: 24 },
+        { firstName: 'Divya', lastName: 'Rathi', age: 27 }
+    ];
+
+    // const output = users.map(x => x.firstName + " " + x.lastName);
+    // console.log(output);
+
+
+    // const output = users.reduce(function (acc, curr) {
+    //     if (acc[curr.age]) {
+    //         acc[curr.age] = ++acc[curr.age];
+    //     } else {
+    //         acc[curr.age] = 1;
+    //     }
+
+    //     return acc;
+    // }, {});
+    // console.log(output)
+
+    //find the user whom age is less than 25
+    // const output = users.filter(x => x.age < 25)
+    // .map(x => x.firstName)
+    // console.log(output)
+
+    //call bind function
+
+    let name = {
+        firstname: "Sara",
+        lastname: "shah",
+        printName() {
+            console.log(this.firstname + " " + this.lastname);
+        }
+    }
+    name.printName();
+
+    let name2 = {
+        firstname: "Luccy",
+        lastname: "Margret"
+    }
+    // also write this or call this by call()
+    name.printName.call(name2);
+
+    let array1 = [1, 2, 3];
+    let array2 = [2, 3, 4, 5]
+
+    // var filteredArray = array1.filter(function (n) {
+    //     // console.log(n)
+    //     console.log(array2.indexOf(n));
+    //     return array2.indexOf(n) !== -1;
+    // });
+
+
+    // var filteredArray = array1.filter((n) => {
+    //     return array2.indexOf(n) != -1;
+    // })
+
+    // console.log(filteredArray);
+
+    // var sum = 0;
+    // for (var i = 0; i <= array1.length; i++) {
+    //     sum += i;
+    // }
+    // console.log(sum);
+
+</script>
